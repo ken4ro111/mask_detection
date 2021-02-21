@@ -1,3 +1,13 @@
+# マスクの装着を検出する
+* マスク装着の有り、無しを検出する物体検出モデル
+* yolov5にて学習
+```
+annotation
+
+mask    :1200 
+no-mask :1100 
+```
+
 <a href="https://apps.apple.com/app/id1452689527" target="_blank">
 <img src="https://user-images.githubusercontent.com/26833433/98699617-a1595a00-2377-11eb-8145-fc674eb9b1a7.jpg" width="1000"></a>
 &nbsp
