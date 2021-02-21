@@ -36,15 +36,9 @@ $ pip install -r requirements.txt
 ## Inference
 
 detect.pyは様々なソースから推論を行い，[最新のYOLOv5リリース](https://github.com/ultralytics/yolov5/releases)からモデルを自動的にダウンロードし，結果を返す `runs/detect`.
+* webcamを使用した、リアルタイム推論
 ```bash
-$ python detect.py --source 0  # webcam
-                            file.jpg  # image 
-                            file.mp4  # video
-                            path/  # directory
-                            path/*.jpg  # glob
-                            rtsp://170.93.143.139/rtplive/470011e600ef003a004ee33696235daa  # rtsp stream
-                            rtmp://192.168.1.105/live/test  # rtmp stream
-                            http://112.50.243.8/PLTV/88888888/224/3221225900/1.m3u8  # http stream
+$ python detect.py --source 0 --weights weights/train/last.pt
 ```
 
 サンプル画像に対して推論を実行するには `data/images`:
