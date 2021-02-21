@@ -1,6 +1,6 @@
 # マスクの装着を検出する
 * マスク装着の有り、無しを検出する物体検出モデル
-* yolov5にて学習
+* 学習モデル: yolov5
 ```
 annotation
 
@@ -14,9 +14,10 @@ no-mask :1100
 
 <a href="https://github.com/ultralytics/yolov5/actions"><img src="https://github.com/ultralytics/yolov5/workflows/CI%20CPU%20testing/badge.svg" alt="CI CPU testing"></a>
 
-このリポジトリは、将来の物体検出方法に関するUltralyticsのオープンソース研究を表しており、匿名化されたクライアントデータセットを用いて何千時間ものトレーニングと進化を続けてきた教訓とベストプラクティスが組み込まれています。**すべてのコードとモデルは開発中のものであり、予告なく変更または削除される場合があります。
+このリポジトリは、将来の物体検出方法に関するUltralyticsのオープンソース研究を表しており、匿名化されたクライアントデータセットを用いて何千時間ものトレーニングと進化を続けてきた教訓とベストプラクティスが組み込まれています。すべてのコードとモデルは開発中のものであり、予告なく変更または削除される場合があります。
 
-<img src="https://user-images.githubusercontent.com/26833433/103594689-455e0e00-4eae-11eb-9cdf-7d753e2ceeeb.png" width="1000">** GPU Speedは、バッチサイズ32のV100 GPUを使用して、5000枚のCOCO val2017画像を平均した画像あたりのエンドツーエンド時間を測定し、画像の前処理、PyTorch FP16推論、後処理、NMSを含みます。バッチサイズ8の[google/automl](https://github.com/google/automl)からのEfficientDetデータ。
+<img src="https://user-images.githubusercontent.com/26833433/103594689-455e0e00-4eae-11eb-9cdf-7d753e2ceeeb.png" width="1000">
+GPU Speedは、バッチサイズ32のV100 GPUを使用して、5000枚のCOCO val2017画像を平均した画像あたりのエンドツーエンド時間を測定し、画像の前処理、PyTorch FP16推論、後処理、NMSを含みます。バッチサイズ8の[google/automl](https://github.com/google/automl)からのEfficientDetデータ。
 
 
 ## Pretrained Checkpoints
